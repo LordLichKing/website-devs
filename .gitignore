@@ -1,0 +1,11 @@
+#.idea
+.idea
+*.iml
+#maven
+target*
+#eclipse
+.settings
+.classpath
+.factorypath
+.project
+.metadata
