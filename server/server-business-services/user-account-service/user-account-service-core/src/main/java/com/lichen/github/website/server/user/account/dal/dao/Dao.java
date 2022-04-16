@@ -1,7 +1,7 @@
 package com.lichen.github.website.server.user.account.dal.dao;
 
 
-import com.lichen.github.website.server.common.dal.PersistentInstance;
+import com.lichen.github.website.server.common.dal.model.PersistentInstance;
 import org.reactivestreams.Publisher;
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;

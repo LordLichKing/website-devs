@@ -1,6 +1,6 @@
 package com.lichen.github.website.server.user.account.dal.model;
 
-import com.lichen.github.website.server.common.dal.UuidPersistentInstanceImpl;
+import com.lichen.github.website.server.common.dal.model.UuidPersistentInstanceImpl;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.relational.core.mapping.Column;

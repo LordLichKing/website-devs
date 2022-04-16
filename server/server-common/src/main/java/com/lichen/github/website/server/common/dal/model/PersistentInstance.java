@@ -1,4 +1,4 @@
-package com.lichen.github.website.server.common.dal;
+package com.lichen.github.website.server.common.dal.model;
 
 import org.springframework.data.domain.Persistable;
 

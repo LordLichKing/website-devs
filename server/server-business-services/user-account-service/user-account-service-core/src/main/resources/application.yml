@@ -1,6 +1,18 @@
 spring:
   application:
     name: user-account-service
+  server:
+    dal:
+      r2dbc:
+        driver: mysql
+        host: localhost
+        port: 3306
+        user: lichen
+        password: 123456
+        database: website_user_account
+        pool:
+          initialSize: 5
+          maxSize: 15
 server:
   port: 8080
 
