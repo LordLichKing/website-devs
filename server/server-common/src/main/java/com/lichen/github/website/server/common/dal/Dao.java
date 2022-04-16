@@ -1,4 +1,4 @@
-package com.lichen.github.website.server.user.account.dal.dao;
+package com.lichen.github.website.server.common.dal;
 
 
 import com.lichen.github.website.server.common.dal.model.PersistentInstance;

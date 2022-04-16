@@ -64,7 +64,7 @@ public class R2dbcConnectionRegistrar implements ImportBeanDefinitionRegistrar, 
                 .option(USER, properties.getUser())
                 .option(PORT, properties.getPort())
                 .option(PASSWORD, properties.getPassword())
-                .option(DATABASE, properties.getPassword())
+                .option(DATABASE, properties.getDatabase())
                 .build());
     }
 
