@@ -1,12 +1,21 @@
 # website-devs
-本项目包括了作者所有的关于网站开发的案例和笔记，欢迎各位读者参考与指正。
+This repository contains all the learning notes and cases of website development. 
 
-本仓库下所有开发都是基于以下技术框架：
+Frameworks:
 
 * java
-* spring-boot / spring-cloud 全家桶
+* spring-boot / spring-cloud
 * mysql, mycat, redis, zookeeper
 * docker
 * maven
 
-(以上开发框架版本不定时更新)
+Content:
+
+- [Data Access Layer](#data-access-layer)
+  - [R2DBC Configuration](#r2dbc-configuration)
+
+## Data Access Layer
+
+### R2DBC Configuration
+
+- [Spring Setup](/server/server-common/src/main/java/com/lichen/github/website/server/common/dal/setup): The integration and setup codes when spring application launches.
