@@ -3,22 +3,28 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.6</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
     <packaging>pom</packaging>
     <modules>
         <module>server-eureka</module>
         <module>server-business-services</module>
         <module>server-common</module>
     </modules>
-    <parent>
-        <artifactId>website-dev</artifactId>
-        <groupId>com.lichen.github</groupId>
-        <version>${revision}</version>
-    </parent>
+    <groupId>com.lichen.github</groupId>
     <artifactId>server</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
     <properties>
-        <spring.boot.version>2.6.6</spring.boot.version>
         <spring-cloud.version>2021.0.1</spring-cloud.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <java.version>11</java.version>
+        <revision>0.0.1-SNAPSHOT</revision>
     </properties>
 
     <dependencyManagement>
@@ -27,15 +33,7 @@
             <dependency>
                 <groupId>com.lichen.github</groupId>
                 <artifactId>server-common</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring.boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <version>${revision}</version>
             </dependency>
 
             <dependency>
