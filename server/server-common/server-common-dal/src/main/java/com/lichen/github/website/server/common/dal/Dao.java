@@ -12,13 +12,12 @@ import java.io.Serializable;
 import java.util.Objects;
 
 /**
- *
  * 通过静态代理的方式，调用{@link #embeddedRepo()}中的同样方法。
- *
+ * <p>
  * 缺点：
- *      1. 不够灵活，每个方法都得实现一遍。
- *      2. springboot 版本升级或者r2dbc 接口改动都会导致这块发生改动。
- *
+ * 1. 不够灵活，每个方法都得实现一遍。
+ * 2. springboot 版本升级或者r2dbc 接口改动都会导致这块发生改动。
+ * <p>
  * 以后会通过动态代理的方法实现。
  *
  * @param <T>

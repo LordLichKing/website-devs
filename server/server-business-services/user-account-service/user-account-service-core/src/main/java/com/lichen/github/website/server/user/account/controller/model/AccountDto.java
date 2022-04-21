@@ -9,4 +9,8 @@ public class AccountDto implements DataTransferObject<String> {
     private String id;
 
     private String username;
+
+    private String emailAddress;
+
+    private String cellPhoneNumber;
 }

@@ -19,7 +19,7 @@ public interface PersistentInstance<ID extends Serializable, UID extends Seriali
 
     /**
      * 相较于JPA和Mybatis等框架，R2DBC需要通过{@link Persistable#isNew()}来判断是insert还是update操作。
-     *
+     * <p>
      * （目前本人尚未找到任何annotation或者其它机制可以代替此方法，故而先暂时这么实现）
      *
      * @param newInstance True: 代表新增操作。

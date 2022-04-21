@@ -17,20 +17,12 @@ public class AccountOperationService implements RestOperationService<AccountDto,
     private AccountBusinessService businessService;
 
     @Override
-    public Mono<? extends AccountDto> doGet(String id) {
-        return businessService.findById(id).map(this::unConvert);
-    }
-
-    @Override
-    public Mono<? extends AccountDto> doPost(AccountDto dto) {
-        return businessService.save(convert(dto)).map(this::unConvert);
-    }
-
-    @Override
     public AccountBo convert(AccountDto dto) {
         AccountBo accountBo = new AccountBo();
         accountBo.setId(dto.getId());
         accountBo.setUsername(dto.getUsername());
+        accountBo.setEmailAddress(dto.getEmailAddress());
+        accountBo.setCellPhoneNumber(dto.getCellPhoneNumber());
         return accountBo;
     }
 
@@ -39,6 +31,8 @@ public class AccountOperationService implements RestOperationService<AccountDto,
         AccountDto accountDto = new AccountDto();
         accountDto.setId(bo.getId());
         accountDto.setUsername(bo.getUsername());
+        accountDto.setEmailAddress(bo.getEmailAddress());
+        accountDto.setCellPhoneNumber(bo.getCellPhoneNumber());
         return accountDto;
     }
 }

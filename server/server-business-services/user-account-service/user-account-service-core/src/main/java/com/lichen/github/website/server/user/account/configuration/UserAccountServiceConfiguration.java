@@ -9,5 +9,4 @@ import org.springframework.data.r2dbc.repository.config.EnableR2dbcRepositories;
 @EnableR2dbcConnectionPool("spring.server.dal.r2dbc")
 public class UserAccountServiceConfiguration {
 
-
 }

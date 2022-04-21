@@ -12,7 +12,7 @@ import java.io.Serializable;
  * @param <B>
  * @param <P>
  */
-public interface BusinessService<B extends BusinessObject<?>, P extends PersistentInstance<?, ?>, I extends Serializable>{
+public interface BusinessService<B extends BusinessObject<?>, P extends PersistentInstance<?, ?>, I extends Serializable> {
 
     Mono<? extends B> findById(I id);
 

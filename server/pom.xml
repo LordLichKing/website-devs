@@ -29,13 +29,6 @@
 
     <dependencyManagement>
         <dependencies>
-
-            <dependency>
-                <groupId>com.lichen.github</groupId>
-                <artifactId>server-common</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>

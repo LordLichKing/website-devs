@@ -9,4 +9,8 @@ public class AccountBo implements BusinessObject<String> {
     private String id;
 
     private String username;
+
+    private String emailAddress;
+
+    private String cellPhoneNumber;
 }

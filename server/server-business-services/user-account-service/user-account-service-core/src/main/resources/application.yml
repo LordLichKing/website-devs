@@ -13,6 +13,11 @@ spring:
         pool:
           initialSize: 5
           maxSize: 15
+  flyway:
+    url: jdbc:mysql://${spring.server.dal.r2dbc.host}:${spring.server.dal.r2dbc.port}/${spring.server.dal.r2dbc.database}
+    user: ${spring.server.dal.r2dbc.user}
+    password: ${spring.server.dal.r2dbc.password}
+
 server:
   port: 8080
 

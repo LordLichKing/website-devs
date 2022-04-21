@@ -6,12 +6,20 @@ import lombok.Setter;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
+@Getter
+@Setter
 @Table("account")
 public class Account extends UuidPersistentInstanceImpl<String> {
 
-    @Getter
-    @Setter
     @Column("username")
     private String username;
 
+    @Column("password")
+    private String password;
+
+    @Column("email_address")
+    private String emailAddress;
+
+    @Column("cell_phone_number")
+    private String cellPhoneNumber;
 }

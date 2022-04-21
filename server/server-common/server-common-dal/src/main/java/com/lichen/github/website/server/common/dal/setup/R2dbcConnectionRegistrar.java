@@ -41,7 +41,7 @@ public class R2dbcConnectionRegistrar implements ImportBeanDefinitionRegistrar, 
         }
 
         R2dbcConnectionProperties properties = getProperties(prefix);
-        ConnectionFactory c  = createConnectionFactory(properties);
+        ConnectionFactory c = createConnectionFactory(properties);
 
         registry.registerBeanDefinition("connectionFactory", BeanDefinitionBuilder.genericBeanDefinition(ConnectionFactory.class, () -> decoratePool(c, properties)).getBeanDefinition());
     }

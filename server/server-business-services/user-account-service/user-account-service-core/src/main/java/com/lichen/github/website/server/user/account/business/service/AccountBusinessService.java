@@ -31,6 +31,8 @@ public class AccountBusinessService implements BusinessService<AccountBo, Accoun
         Account account = new Account();
         account.setId(bo.getId());
         account.setUsername(bo.getUsername());
+        account.setEmailAddress(bo.getEmailAddress());
+        account.setCellPhoneNumber(bo.getCellPhoneNumber());
         return account;
     }
 
@@ -39,6 +41,8 @@ public class AccountBusinessService implements BusinessService<AccountBo, Accoun
         AccountBo bo = new AccountBo();
         bo.setId(po.getId());
         bo.setUsername(po.getUsername());
+        bo.setEmailAddress(po.getEmailAddress());
+        bo.setCellPhoneNumber(po.getCellPhoneNumber());
         return bo;
     }
 

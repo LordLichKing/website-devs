@@ -14,9 +14,13 @@ import java.io.Serializable;
  */
 public interface RestOperationService<D extends DataTransferObject<I>, B extends BusinessObject<?>, I extends Serializable> {
 
-    Mono<? extends D> doGet(I id);
+    default Mono<? extends D> doGet(I id) {
+        return getBusinessService().findById(id).map(this::unConvert);
+    }
 
-    Mono<? extends D> doPost(D dto);
+    default Mono<? extends D> doPost(D dto) {
+        return getBusinessService().save(convert(dto)).map(this::unConvert);
+    }
 
     BusinessService<B, ?, I> getBusinessService();
 

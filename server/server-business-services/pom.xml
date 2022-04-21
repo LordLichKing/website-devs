@@ -19,7 +19,8 @@
     <dependencies>
         <dependency>
             <groupId>com.lichen.github</groupId>
-            <artifactId>server-common</artifactId>
+            <artifactId>server-common-dal</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 </project>
